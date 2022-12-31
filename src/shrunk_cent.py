@@ -8,9 +8,9 @@ sys.path.append(".")
 sys.path.append("..")
 
 import numpy as np
-from sktime.utils.data_io import load_from_tsfile_to_dataframe
+from sktime.datasets import load_from_tsfile_to_dataframe
 from operator import truediv 
-from sktime.utils.data_processing import from_nested_to_3d_numpy, from_3d_numpy_to_nested
+from sktime.datatypes._panel._convert import from_nested_to_3d_numpy, from_3d_numpy_to_nested
 from sklearn.neighbors import NearestCentroid
 from sklearn.preprocessing import LabelEncoder
 from scipy.signal import savgol_filter

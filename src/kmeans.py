@@ -6,7 +6,7 @@ sys.path.append("..")
 
 import numpy as np
 import pandas as pd
-from sktime.utils.data_io import load_from_tsfile_to_dataframe
+from sktime.datasets import load_from_tsfile_to_dataframe
 from src.shrunk_cent import shrunk_centroid
 #from scripts.dim_selection import dimension
 from src.calc_distance import distance_matrix

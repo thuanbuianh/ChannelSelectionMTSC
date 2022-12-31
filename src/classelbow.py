@@ -11,13 +11,12 @@ sys.path.append("..")
 
 import numpy as np
 import pandas as pd
-from sktime.utils.data_io import load_from_tsfile_to_dataframe
+from sktime.datasets import load_from_tsfile_to_dataframe
 from .shrunk_cent import shrunk_centroid
 from .calc_distance import distance_matrix
 from .utils import detect_knee_point
 from collections import Counter
 from sklearn.base import TransformerMixin, BaseEstimator
-#from dataset import dataset_
 import collections
 from scipy.stats import rankdata 
 from numpy.linalg import norm
